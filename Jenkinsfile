@@ -1,4 +1,4 @@
-node('jdk11-mvn3.8.4') {
+node('test3-label') {
     try {
         properties([parameters([choice(choices: ['scripted', 'master', 'declarative'], description: 'branch to be built', name: 'BRANCH_TO_BUILD')])])
         stage('git') {
